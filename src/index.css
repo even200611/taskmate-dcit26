@@ -202,7 +202,7 @@ input:focus-visible {
 }
 
 
-/* Galaxy background for TaskMate */
+
 .min-h-screen.bg-slate-50 {
   background-color: #07152e !important;
   background-image:
@@ -216,14 +216,14 @@ input:focus-visible {
   background-attachment: fixed;
 }
 
-/* Keep content easy to read */
+
 main h1,
 main h2,
 main h3 {
   color: #263449;
 }
 
-/* Smooth, modern cards */
+
 main section > div.grid > a,
 main section > div.grid > div,
 main section > div.space-y-3 > div {
@@ -244,9 +244,6 @@ main section > div.grid > div:hover {
 }
 
 
-/* TASKMATE GALAXY THEME FIX */
-
-/* Dark glass navbar */
 header {
   background: rgba(5, 18, 43, 0.92) !important;
   border-bottom: 1px solid rgba(112, 177, 255, 0.3) !important;
@@ -266,7 +263,7 @@ header nav a[aria-current="page"] {
   color: #ffffff !important;
 }
 
-/* Readable headings */
+
 main h1,
 main h2,
 main h3 {
@@ -286,7 +283,7 @@ main .text-slate-800 {
   color: #f0f6ff !important;
 }
 
-/* Dashboard statistics and task group cards */
+
 main section > div.grid > div,
 main section > div.grid > a {
   background: rgba(8, 28, 63, 0.84) !important;
@@ -297,7 +294,7 @@ main section > div.grid > a {
   backdrop-filter: blur(14px);
 }
 
-/* Card hover effect */
+
 main section > div.grid > a:hover,
 main section > div.grid > div:hover {
   background: rgba(15, 48, 91, 0.94) !important;
@@ -306,14 +303,14 @@ main section > div.grid > div:hover {
   transform: translateY(-3px);
 }
 
-/* Teal links */
+
 main section a.text-indigo-600,
 main section span.text-indigo-600,
 main section p.text-indigo-600 {
   color: #42e5da !important;
 }
 
-/* Forms */
+
 main form {
   background: rgba(7, 24, 54, 0.9) !important;
   border: 1px solid rgba(114, 174, 255, 0.35) !important;
@@ -335,7 +332,7 @@ main form button[type="submit"] {
   color: #ffffff !important;
 }
 
-/* Task action buttons */
+
 main section button.bg-slate-100 {
   background: #dceafe !important;
   color: #17365f !important;
@@ -347,7 +344,7 @@ main section button.bg-red-50 {
   border: 1px solid #85404e;
 }
 
-/* Guide and developer information cards */
+
 main section > div.space-y-3 > div,
 main section > div.rounded-2xl {
   background: rgba(8, 28, 63, 0.9) !important;
@@ -355,14 +352,14 @@ main section > div.rounded-2xl {
   color: #edf5ff !important;
 }
 
-/* Footer glass effect */
+
 footer {
   background: rgba(5, 18, 43, 0.94) !important;
   color: #d5e4f8 !important;
   border-top: 1px solid rgba(112, 177, 255, 0.35) !important;
 }
 
-/* Better keyboard focus */
+
 button:focus-visible,
 a:focus-visible,
 input:focus-visible {

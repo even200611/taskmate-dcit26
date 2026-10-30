@@ -543,46 +543,110 @@ function GuidePage() {
 
 function DevelopersPage() {
   return (
-    <section className="mx-auto w-full max-w-3xl overflow-hidden rounded-3xl border border-white/20 bg-white shadow-2xl">
-      <div className="bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950 px-6 py-8 sm:px-10">
-        <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">
-          TASKMATE · DCIT 26
-        </p>
-        <h1 className="mt-3 text-3xl font-extrabold !text-white sm:text-4xl">
-          Meet the Developer
-        </h1>
-        <p className="mt-2 text-sm !text-blue-100 sm:text-base">
-          About the student behind TaskMate
-        </p>
+    <section className="mx-auto w-full max-w-5xl overflow-hidden rounded-3xl border border-white/20 bg-white shadow-2xl">
+      <div className="relative overflow-hidden bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950 px-6 py-10 sm:px-10">
+        <div className="absolute -right-12 -top-20 h-64 w-64 rounded-full bg-cyan-400/10 blur-3xl" />
+        <div className="absolute -bottom-24 left-1/3 h-52 w-52 rounded-full bg-indigo-400/20 blur-3xl" />
+        <div className="relative">
+          <p className="text-xs font-extrabold uppercase tracking-[0.3em] text-cyan-300 sm:text-sm">
+            TASKMATE · DCIT 26
+          </p>
+          <h1 className="mt-3 text-3xl font-black !text-white sm:text-4xl">
+            Meet the Developers
+          </h1>
+          <p className="mt-2 max-w-xl text-sm !text-blue-100 sm:text-base">
+            The people behind the idea, development, and testing of TaskMate.
+          </p>
+          <div className="mt-6 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-300 to-blue-500" />
+        </div>
       </div>
 
-      <div className="p-5 sm:p-9">
-        <div className="rounded-2xl border border-indigo-100 bg-gradient-to-br from-slate-50 to-indigo-50 p-6 sm:p-8">
-          <p className="text-xs font-extrabold uppercase tracking-[0.2em] !text-indigo-600 sm:text-sm">
-            Student Developer
-          </p>
-          <h2 className="mt-3 break-words text-3xl font-extrabold leading-tight !text-slate-950 sm:text-4xl">
-            Steven Pepino Jimenez
-          </h2>
-          <div className="mt-5 h-1.5 w-20 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400" />
-          <p className="mt-5 max-w-2xl text-sm leading-7 !text-slate-700 sm:text-base">
-            I created TaskMate to help organize school activities, personal tasks,
-            and daily responsibilities in one simple website.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-2">
-            <span className="rounded-full border border-indigo-200 bg-white px-3 py-1.5 text-xs font-bold !text-indigo-800 sm:text-sm">React</span>
-            <span className="rounded-full border border-blue-200 bg-white px-3 py-1.5 text-xs font-bold !text-blue-800 sm:text-sm">JavaScript</span>
-            <span className="rounded-full border border-cyan-200 bg-white px-3 py-1.5 text-xs font-bold !text-cyan-800 sm:text-sm">Tailwind CSS</span>
+      <div className="grid gap-5 p-5 sm:grid-cols-2 sm:p-8">
+        <article className="group relative overflow-hidden rounded-2xl border border-indigo-100 bg-gradient-to-br from-slate-50 via-white to-indigo-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7">
+          <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-indigo-200/40 blur-2xl transition group-hover:bg-indigo-300/50" />
+          <div className="relative">
+            <div className="flex items-center justify-between gap-3">
+              <span className="rounded-full border border-indigo-200 bg-white/90 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.16em] !text-indigo-700">
+                Student Developer
+              </span>
+              <span className="text-2xl" aria-hidden="true">✦</span>
+            </div>
+            <div className="mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 to-blue-500 text-xl font-black text-white shadow-lg shadow-indigo-500/20">
+              SJ
+            </div>
+            <h2 className="mt-5 break-words text-2xl font-black leading-tight !text-slate-950 sm:text-3xl">
+              Steven Pepino Jimenez
+            </h2>
+            <p className="mt-3 text-sm leading-7 !text-slate-700">
+              I developed TaskMate to help users organize school activities,
+              personal tasks, and daily responsibilities in one simple and
+              user-friendly website.
+            </p>
+            <div className="mt-5">
+              <h3 className="text-xs font-extrabold uppercase tracking-[0.18em] !text-indigo-700">
+                My Contributions
+              </h3>
+              <ul className="mt-3 space-y-2 text-sm !text-slate-700">
+                <li>✓ Interface and website design</li>
+                <li>✓ React components development</li>
+                <li>✓ Task management features</li>
+                <li>✓ Page navigation</li>
+                <li>✓ System testing with AI assistance</li>
+              </ul>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-2">
+              <span className="rounded-full border border-indigo-200 bg-white px-3 py-1.5 text-xs font-bold !text-indigo-800">React</span>
+              <span className="rounded-full border border-blue-200 bg-white px-3 py-1.5 text-xs font-bold !text-blue-800">JavaScript</span>
+              <span className="rounded-full border border-cyan-200 bg-white px-3 py-1.5 text-xs font-bold !text-cyan-800">Tailwind CSS</span>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-6 sm:p-7">
-          <h3 className="text-lg font-extrabold !text-slate-900 sm:text-xl">
-            My Contribution
-          </h3>
-          <p className="mt-3 text-sm leading-7 !text-slate-700 sm:text-base">
-            I worked on the interface design, React components, task management
-            features, page navigation, and testing with AI assistance.
+        <article className="group relative overflow-hidden rounded-2xl border border-cyan-100 bg-gradient-to-br from-slate-50 via-white to-cyan-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7">
+          <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan-200/40 blur-2xl transition group-hover:bg-cyan-300/50" />
+          <div className="relative">
+            <div className="flex items-center justify-between gap-3">
+              <span className="rounded-full border border-cyan-200 bg-white/90 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[0.16em] !text-cyan-800">
+                System Tester
+              </span>
+              <span className="text-2xl" aria-hidden="true">✓</span>
+            </div>
+            <div className="mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-600 to-teal-500 text-xl font-black text-white shadow-lg shadow-cyan-500/20">
+              LE
+            </div>
+            <h2 className="mt-5 break-words text-2xl font-black leading-tight !text-slate-950 sm:text-3xl">
+              Lorelie Escudero
+            </h2>
+            <p className="mt-3 text-sm leading-7 !text-slate-700">
+              She helped evaluate TaskMate by trying its features and checking
+              whether the website works properly and is easy to use.
+            </p>
+            <div className="mt-5">
+              <h3 className="text-xs font-extrabold uppercase tracking-[0.18em] !text-cyan-800">
+                Her Contributions
+              </h3>
+              <ul className="mt-3 space-y-2 text-sm !text-slate-700">
+                <li>✓ Tested the website's pages and features</li>
+                <li>✓ Checked buttons and page navigation</li>
+                <li>✓ Looked for errors and unexpected behavior</li>
+                <li>✓ Checked if task actions work as expected</li>
+                <li>✓ Shared feedback to improve usability</li>
+              </ul>
+            </div>
+            <div className="mt-6 inline-flex rounded-full border border-cyan-200 bg-white px-3 py-1.5 text-xs font-bold !text-cyan-800">
+              Testing & Quality Checking
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div className="px-5 pb-6 sm:px-8 sm:pb-8">
+        <div className="rounded-2xl border border-slate-200 bg-slate-950 p-5 text-center shadow-inner sm:p-6">
+          <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-cyan-300">
+            One Team · One Goal
+          </p>
+          <p className="mt-2 text-sm leading-6 text-slate-200 sm:text-base">
+            Building a simple, useful, and user-friendly way to stay organized.
           </p>
         </div>
       </div>
